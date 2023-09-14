@@ -3,13 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chess Openings</title>
-	<link rel="stylesheet" 
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="css/chessboard-1.0.0.min.css"/>
+	<script defer src="js/chessboard-1.0.0.min.js"></script>
+	<script defer src="js/chess.js"></script>
+	<script defer src="js/openings.js"></script>
+	<script defer src="js/main.js"></script>
 </head>
 <body>
-	<h1>Chess Openings</h1>
-	<h2><a href="ruy_lopez.html">Ruy Lopez</a></h2>
-	<h3><a href="ruy_lopez_classical.html">Ruy Lopez Classical (Cordel) Defense</a></h2>
-	<h2><a href="sicilian.html">Sicilian Defense</a></h2>
-	<h2><a href="queens_gambit.html">Queen's Gambit</a></h2>
+	<div class="title">
+		<h1>Chess Openings</h1>
+	</div>
+	<div class="row">
+		<a href="ruy_lopez.html">
+			<div class="column">
+				<h2>Ruy Lopez</h2>
+				<div id="ruy_lopez"></div>
+			</div>
+		</a>
+		<a href="sicilian.html">
+			<div class="column">
+				<h2>Sicilian Defense</h2>
+				<div id="sicilian"></div>
+			</div>
+		</a>
+		<a href="queens_gambit">
+			<div class="column">
+				<h2>Queen's Gambit</h2>
+				<div id="queens_gambit"></div>
+			</div>
+	</div>
 </body>
 </html>

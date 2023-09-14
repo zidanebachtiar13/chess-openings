@@ -1,21 +1,20 @@
 let $pgn = $('#pgn')
+let i = [0, 0, 0]
 
 function sicilian() {
 	move = ['e4', 'c5']
-	game.move(move[i])
-	board.position(game.fen())
+	game_sicilian.move(move[i[0]])
+	board_sicilian.position(game_sicilian.fen())
 	window.setTimeout(sicilian, 1000)
-	i++
-	$pgn.html(game.pgn())
+	i[0]++
 }
 
 function ruy_lopez() {
 	move = ['e4', 'e5', 'Nf3', 'Nc6', 'Bb5']
-	game.move(move[i])
-	board.position(game.fen())
+	game_ruy_lopez.move(move[i[1]])
+	board_ruy_lopez.position(game_ruy_lopez.fen())
 	window.setTimeout(ruy_lopez, 1000)
-	i++
-	$pgn.html(game.pgn())
+	i[1]++
 }
 
 function ruy_lopez_classical() {
@@ -29,9 +28,8 @@ function ruy_lopez_classical() {
 
 function queens_gambit() {
 	move = ['d4', 'd5', 'c4']
-	game.move(move[i])
-	board.position(game.fen())
+	game_queens_gambit.move(move[i[2]])
+	board_queens_gambit.position(game_queens_gambit.fen())
 	window.setTimeout(queens_gambit, 1000)
-	i++
-	$pgn.html(game.pgn())
+	i[2]++
 }
