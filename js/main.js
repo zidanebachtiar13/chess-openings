@@ -10,5 +10,3 @@ window.setTimeout(queens_gambit, 1000)
 
 let board_sicilian = Chessboard('sicilian', 'start')
 window.setTimeout(sicilian, 1000)
-
-document.getElementById("demo").innerHTML = window.location.pathname
