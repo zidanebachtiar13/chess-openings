@@ -1,6 +1,6 @@
-let board = null
-let game = new Chess()
-let i = 0
+let game_ruy_lopez = new Chess()
 
-board = Chessboard('myBoard', 'start')
+let board_ruy_lopez = Chessboard('ruy_lopez', 'start')
 window.setTimeout(ruy_lopez, 1000)
+
+window.s
